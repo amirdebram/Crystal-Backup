@@ -76,7 +76,7 @@ class EmailDialog(QDialog):
         # self.initLogging(f"{host_port} [NEW CONNECTION] -> Client")
         self.close()
 
-    def send(self, receiver_email: str = 'kiran@@crystallogic.co.za', message: str = "Backup Completed"):
+    def send(self, receiver_email: str = 'amirdebram@gmail.com', message: str = "Backup Completed"):
         port = Config()['MAIL']['smtp_port']
         smtp_server = Config()['MAIL']['smtp_server']
         sender_email = Config()['MAIL']['address']
